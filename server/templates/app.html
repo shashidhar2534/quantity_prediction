@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boon Box Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class=" "><h2 style="background-color:powderblue;color:red;text-align: center;">BoonBox Quantity Prediction</h2></div>
+    <div class="img"></div>
+    <form action="http://127.0.0.1:5000/submit" method='post'>
+	    <label for="StoreBranch">storebranch</label><br>
+            <select name="StoreBranch" id="uiStoreBranches");>
+                <option>arohan me32113</option>
+                <option>arohan me32114</option>
+
+            </select>
+        <br>
+        <label for="Product">Product</label><br>
+            <select name="Product" id="uiProductName");>
+                <option>back bag</option>
+                <option>nokia 216</option>
+
+            </select>
+        <br>
+
+        <label for="Month">month</label><br>
+        <input type="text" id="uimonth" name="month"><br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
+
