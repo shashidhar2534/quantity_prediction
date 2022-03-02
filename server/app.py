@@ -16,6 +16,9 @@ with open("columns.json", "r") as f:
     products = data_columns[1003:1518]
 
 app = Flask(__name__)
+@app.route('/')
+def home():
+    return  render_template('app.html')
 
 
 
