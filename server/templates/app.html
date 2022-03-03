@@ -11,7 +11,7 @@
 
     <div class=" "><h2 style="background-color:powderblue;color:red;text-align: center;">BoonBox Quantity Prediction</h2></div>
     <div class="img"></div>
-    <form action="http://127.0.0.1:5000/submit" method='post'>
+    <form action="https://boonboxprediction.herokuapp.com/submit" method='post'>
 	    <label for="StoreBranch">storebranch</label><br>
             <select name="StoreBranch" id="uiStoreBranches");>
                 <option>arohan me32113</option>
@@ -40,8 +40,8 @@
 alert("please wait page is loading")
 function onPageLoad() {
   console.log( "document loaded" );
-  var url1 = "http://127.0.0.1:5000/get_store_branches";
-  var url2="http://127.0.0.1:5000/product";
+  var url1 = "https://boonboxprediction.herokuapp.com/get_store_branches";
+  var url2="https://boonboxprediction.herokuapp.com/product";
 
   $.get(url1,function(data, status) {
       console.log("got response for get_store_branches request");
@@ -78,4 +78,6 @@ window.onload = onPageLoad;
 </script>
 
 </html>
+
+
 
